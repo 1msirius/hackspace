@@ -1,11 +1,9 @@
-// TODO: make this a proper addon
-
-const LOGO_TYPE = `    __  __           __   _____                     
-   / / / /___ ______/ /__/ ___/____  ____ _________ 
-  / /_/ / __ \`/ ___/ //_/\\__ \\/ __ \\/ __ \`/ ___/ _ \\
- / __  / /_/ / /__/ ,<  ___/ / /_/ / /_/ / /__/  __/
-/_/ /_/\\__,_/\\___/_/|_|/____/ .___/\\__,_/\\___/\\___/ 
-                           /_/   `.replaceAll("\n", "\r\n");
+const LOGO_TYPE = `    __  __           __      ______      __                
+   / / / /___ ______/ /__   / ____/_  __/ /___  __________ 
+  / /_/ / __ \`/ ___/ //_/  / /_  / / / / __/ / / / ___/ _ \\
+ / __  / /_/ / /__/ ,<    / __/ / /_/ / /_/ /_/ / /  /  __/
+/_/ /_/\\__,_/\\___/_/|_|  /_/    \\__,_/\\__/\\__,_/_/   \\___/ 
+`.replaceAll("\n", "\r\n");
 
 extend = (term) => {
   term.VERSION = term.VERSION || 2;
@@ -179,7 +177,9 @@ extend = (term) => {
     fitAddon.fit();
     term.reset();
     term.printLogoType();
-    term.stylePrint(`\n${colorText("A place where teens built cool shit!", "user")}`);
+    term.stylePrint(
+      `\n${colorText("A place where teens built cool shit!", "user")}`
+    );
     term.stylePrint(
       `Type ${colorText("help", "command")} to get started.`,
       false
