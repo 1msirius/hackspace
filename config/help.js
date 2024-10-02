@@ -1,5 +1,4 @@
 const help = {
-  "%help%": "list all commands (you're looking at it)",
   "%commit%": "learn about Commit",
   "%apply%": "apply to Commit",
   "%hackathon%": "list all hackathon projects",

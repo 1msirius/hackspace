@@ -11,9 +11,9 @@ extend = (term) => {
   term.VERSION = term.VERSION || 2;
   term.currentLine = "";
   term.user = "hacker";
-  term.host = "cnvctn";
+  term.host = "hackspace";
   term.cwd = "~";
-  term.sep = ":";
+  term.sep = "@";
   term._promptChar = "$";
   term.history = [];
   term.historyCursor = -1;
